@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie Seat Booking</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="pickName">
+				<label for="select">Pick Name </label>
+				<select name="select" id="select">
+					<option value="12">Indiana Jones (12$)</option>
+					<option value="10">Jumanji (10$)</option>
+					<option value="15">Gone with the Wind (15$)</option>
+					<option value="20">The Hobbits (20$)</option>
+				</select>
+			</div>
+			<div class="seatInfo">
+				<div class="NA">
+					<div class="seat available_seat"></div>
+					N/A
+				</div>
+				<div class="taken">
+					<div class="seat taken_seat"></div>
+					Taken
+				</div>
+				<div class="occupy">
+					<div class="seat occupy_seat"></div>
+					Occupied
+				</div>
+			</div>
+			<div class="movieScreen">
+				<div class="inner"></div>
+			</div>
+			<div class="seats"></div>
+			<div class="info">
+				You have selected <span id="takenSeat"> 0 </span> seats for
+				<span id="totalPrice">0 $</span>
+			</div>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
